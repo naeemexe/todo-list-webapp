@@ -1,13 +1,10 @@
 <!DOCTYPE html>
     <head>
-        <title>Document</title>
+        <title>Todo List</title>
         <link rel="stylesheet" href="index.css">
     </head>
-
     <body>
-
-        <p>Today's Task List</p>
-
+        <p>Todo List</p>
         <div class="input-grid">
             <input type="text" placeholder="Add tasks" class="js-input-task input-task" onkeydown="
                 if(event.key==='Enter'){
@@ -16,14 +13,12 @@
                     else{
                         addTask();
                         showTask(); }}">
-
             <input type="date" class="js-date-input input-date" onkeydown="
                 if(document.querySelector('.js-input-task').value===''){
                     alert('Enter a task first'); }
                 else{
                     addTask();
                     showTask(); }">
-
             <button onclick="
                 if(document.querySelector('.js-input-task').value===''){
                     alert('Enter a task first'); }
@@ -31,11 +26,7 @@
                     addTask();
                     showTask();}" class="add-button">Add</button>
         </div>
-
         <div class="js-output-task output-grid"></div>
-
     </body>
-
     <script src="index.js"></script>
-
 </html>
